@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+body{
+   background-image: linear-gradient(#003);
+   height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px ;
+    
+}
+nav .logo{
+    color: white;
+    font-family: DynaPuff;
+    font-size: 35px;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 20px white;
+    animation: x 3s ease infinite;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav ul li{
+    list-style-type: none;
+    margin:0 35px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:sans-serif;
+}
+nav ul li a:hover{
+    color: rgb(38, 0, 255);
+    text-decoration: underline;
+}
+.content{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content p{
+    text-align: center;
+    
+    color:white;
+    font-size: 18px;
+    font-family: DynaPuff;
+    font-weight: 600;
+    text-shadow: 1px 1px 25px white;
+}
+img{
+     animation: x 3s ease infinite;
+    
+}
+@keyframes x{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@media (max-width:600px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav .logo{
+        font-size: 30px;
+
+    }
+    nav ul li{
+        margin: 10px 15px;
+        margin-top: 20px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   
+    }
+    .content img{
+        width: 400px;
+        margin-left: -60px;
+    }
+
+    
+    
+}
+@media (min-width:601px) and (max-width:1024px){
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content p{
+        width: 700px;
+    }
+    .content img{
+        width: 400px;
+        margin-left: -60px;
+        margin-top: 40px;
+    }
+}
